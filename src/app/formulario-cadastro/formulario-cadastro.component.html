@@ -1,0 +1,44 @@
+<p>formulario-cadastro works!</p>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabela de Dados</title>
+</head>
+
+<body>
+    <h1>Tabela de Dados</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>SOBRENOME</th>
+            <th>CPF</th>
+            <th>Idade</th>
+            <th>ENDEREÇO</th>
+        </tr>
+        <script>
+            
+
+            // Loop para exibir os dados na tabela
+            for (const pessoa of pessoas) {
+                document.write(
+                <tr>
+                    <td>${pessoa.ID}</td>
+                    <td>${pessoa.NOME}</td>
+                    <td>${pessoa.SOBRENOME}</td>
+                    <td>${pessoa.CPF}</td>
+                    <td>${pessoa.idade}</td>
+                    <td>${pessoa.ENDEREÇO}</td>
+                </tr>
+                );
+            }
+        </script>
+    </table>
+</body>
+
+</html>
+
